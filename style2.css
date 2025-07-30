@@ -1,5 +1,5 @@
 h1{
-    color:rgb(255, 152, 216);
+    color:rgb(73, 200, 250);
 }
 table {
     border-collapse: collapse;
@@ -40,3 +40,31 @@ table {
   tfoot td {
     font-weight: bold;
   }  
+  .special {
+    color: rgb(3, 3, 75);
+}
+h2{
+    color: rgb(32, 82, 218);
+}
+li {
+     font-family: cursive;
+}
+h3{
+    font-family: georgia;
+}
+.recipe {
+    list-style-type: none;
+    color: rgb(46, 101, 122)
+}
+.font {
+    font-family:arial;
+}
+h3{
+    color: cornflowerblue;
+}
+span {
+    background-color: slategrey;
+}
+.tips {
+    color: rgb(16, 4, 61)
+}
