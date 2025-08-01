@@ -4,91 +4,384 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" /> <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
     <header>
-        <a class="logo" href="#">The Fruits</a>
-      </header>
-      
-      <article>
-        <header>
-          <h4 class="special">Fruit</h4> 
-          <time>07.28.2025</time> 
-    
-        </header>
-        <p>
-          I love fruit <em>so</em> much! Like, really, a lot. They’re delicious,
-          so sweet and healthy. There are so many different kinds of fruit.
-        </p>
-      </article>
-    
-      <table>
-        <caption>
-          Types of Fruit 
-        </caption>
+        <h1><em>DELICIOUS DESSERT RECIPES & MORE!</em></h1> 
+    </header>
+    <img
+  class="fit-picture"
+  src="download.jpg"
+  alt=""
+
+    <header>
+        <h3>Ingredients needed for every recipe:</h3> 
+    </header>
+    <ul>
+        <li>Flour</li>
+        <li>Sugar</li>
+        <li>Eggs</li>
+        <li>Butter</li>
+        <li>Milk</li>
+        <li>Baking Powder/Soda</li>
+        <li>Salt</li>
+        <li>Vanilla Extract</li>
+      </ul>
+      <img
+  class="fit-picture"
+  src="baking.jpg"
+  alt="" />
+      <header>
+        <h3>Tools needed for every recipe:</h3> 
+    </header>
+    <ul>
+        <li>Mixing Bowls</li>
+        <li>Measuring Cups & Spoons</li>
+        <li>Whisk</li>
+        <li>Spatula</li>
+        <li>Hand or Stand Mixer</li>
+        <li>Sifter</li>
+        <li>Baking Pans + Sheets</li>
+        <li>Oven</li>
+      </ul>
+      <img
+  class="fit-picture"  width="400" height="255"
+  src="tools.jpg"
+  alt="" />
+      <header>
+        <h3>Helpful Conversion Chart</h3> 
+    </header>
+    <table>
         <thead>
           <tr>
-            <th scope="col">Fruit</th>
-            <th scope="col">Taste</th>
-            <th scope="col">Color</th>
-          </tr>
+            <th class="special"scope="col">TSP</th>
+            <th class="special"scope="col">TBSP</th>
+            <th class="special"scope="col">FL OZ</th>
+            <th class="special"scope="col">CUP</th>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Apple</th>
-            <td>Sweet</td>
-            <td>Red</td>
+            <th scope="row">3</th>
+            <td>1</td>
+            <td>0.5</td>
+            <td>-</td>
           </tr>
           <tr>
-            <th scope="row">Banana</th>
-            <td>Sweet</td>
-            <td>Yellow</td>
+            <th scope="row">6</th>
+            <td>2</td>
+            <td>1</td>
+            <td>1/8</td>
           </tr>
           <tr>
-            <th scope="row">Blueberry</th>
-            <td>Tangy</td>
-            <td>Blue</td>
+            <th scope="row">12</th>
+            <td>4</td>
+            <td>2</td>
+            <td>1/4</td>
           </tr>
           <tr>
-            <th scope="row">Kiwi</th>
-            <td>Tangy</td>
-            <td>Green</td>
+            <th scope="row">24</th>
+            <td>8</td>
+            <td>4</td>
+            <td>1/2</td>
           </tr>
+          <th scope="row">48</th>
+          <td>16</td>
+          <td>8</td>
+          <td>1</td>
+        </tr>
+        <th scope="row">96</th>
+        <td>32</td>
+        <td>16</td>
+        <td>2</td>
+      </tr>
         </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row" colspan="2"></th>
-            <td></td>
-          </tr>
-        </tfoot>
-      </table>
-    
-      <hgroup>
-        <h1>About Fruits!</h1>
-        <em>fruit</em>
-      </hgroup>
-      <p>
-        Fruit is a healthy and tasty part of our daily meals. It grows on trees, bushes, and vines, and comes in many colors and shapes. Apples are crunchy, bananas are soft and sweet, and oranges have a juicy bite. Eating fruit gives your body vitamins and energy. You can enjoy it fresh, in a smoothie, or sliced up as a snack. It's nature’s candy—good for you and super yummy!
-    
-        <p>List of Fruits:</p>
-    
-    <ul>
-      <li>Apples</li>
-      <li>Pear</li>
-      <li>Plum</li>
-      <li>Grapes</li>
-      <li>Raspberry</li>
-    </ul>
-    
-    <img width="200" height="200" src="fruits.jpg" alt="Various Fruits">
-    <p></p>
-    A link to
-    <a href="https://www.nutritionadvance.com/healthy-foods/types-of-fruit/">healthy fruits</a>
-    <p></p>
-    
+        </table>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flour Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+    }
+    input, select {
+      padding: 8px;
+      font-size: 1em;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Convert Cups to Grams</h3>
+
+  <label for="amount">Amount (in cups):</label>
+  <input type="number" id="cups" placeholder="e.g. 1.5" step="any">
+
+  <label for="ingredient">Ingredient:</label>
+  <select id="ingredient">
+    <option value="flour">All-Purpose Flour</option>
+    <option value="sugar">Granulated Sugar</option>
+    <option value="butter">Butter</option>
+  </select>
+
+  <button onclick="convert()">Convert</button>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    function convert() {
+      const cups = parseFloat(document.getElementById('cups').value);
+      const ingredient = document.getElementById('ingredient').value;
+      let gramsPerCup;
+
+      switch (ingredient) {
+        case 'flour':
+          gramsPerCup = 120;
+          break;
+        case 'sugar':
+          gramsPerCup = 200;
+          break;
+        case 'butter':
+          gramsPerCup = 227;
+          break;
+        default:
+          gramsPerCup = 0;
+      }
+
+      if (!isNaN(cups)) {
+        const grams = cups * gramsPerCup;
+        document.getElementById('result').textContent = `${cups} cup(s) of ${ingredient} = ${grams.toFixed(2)} grams`;
+      } else {
+        document.getElementById('result').textContent = 'Please enter a valid number of cups.';
+      }
+    }
+  </script>
+
 </body>
 </html>
 
-<li class="special">
-<ul></ul>
+        <header>
+            <h2>Dessert Types</h2> 
+        </header>
+        <ul class="recipe"class="font">
+            <li><a class="recipe"href="https://sallysbakingaddiction.com/super-moist-chocolate-cupcakes/">Chocolate Cupcakes</a></li>
+            <li><a class="recipe"href="https://preppykitchen.com/1448-2/">Vanilla Cake</a></li>
+            <li><a class="recipe"href="https://sugarspunrun.com/best-cheesecake-recipe/">Cheesecake</a></li>
+            <li><a class="recipe"href="https://www.loveandlemons.com/homemade-ice-cream-recipe/">Homemade Ice Cream</a></li>
+            <li><a class="recipe"href="https://preppykitchen.com/lemon-bars/">Lemon Bars</a></li>
+            <li><a class="recipe"href="https://www.inspiredtaste.net/24412/cocoa-brownies-recipe/">Fudge Brownies</a></li>
+            <li><a class="recipe"href="https://www.ambitiouskitchen.com/best-cinnamon-rolls/">Cinammon Rolls</a></li>
+          </ul>
+
+          <header>
+            <h2>Advanced Dessert Recipes</h2> 
+        </header>
+          <ul class="recipe"class="font">
+            <li><a class="recipe"href="https://sallysbakingaddiction.com/french-macarons/">French Macarons</a></li>
+            <li><a class="recipe"href="https://sallysbakingaddiction.com/chocolate-souffle/">Chocolate Souffle</a></li>
+            <li><a class="recipe"href="https://bakewithzoha.com/best-classic-italian-tiramisu/">Tiramisu</a></li>
+            <li><a class="recipe"href="https://cooking.nytimes.com/recipes/9039-vanilla-creme-brulee">Creme Brulee</a></li>
+            <li><a class="recipe"href="https://www.onceuponachef.com/recipes/key-lime-pie.html">Key Lime Pie</a></li>
+            <li><a class="recipe"href="https://www.foodnetwork.com/recipes/alexandra-guarnaschelli/homemade-cannoli-recipe-2042720">Cannolis</a></li>
+            <li><a class="recipe"href="https://cakesbymk.com/recipe/simple-crepe-cake-recipe/">Crepe Cake</a></li>
+            <li><a class="recipe"href="https://www.theflavorbender.com/homemade-french-croissants-step-by-step-recipe/">Croissants</a></li>
+          </ul>
+
+          <header>
+             <h2><a class="tips"></a>Helpful Baking Tips</h2> 
+        </header>
+        <li>Always preheat your oven-it ensures even baking from the start. </li>
+        <li>Use room temperature ingredients-especially butter, eggs, and milk for smooth batters </li>
+        <li>Do not overmix the batter-it can make cakes and muffins dense or tough.</li>
+        <li>Line baking pans with parchment paper-makes cleanup easier and prevents sticking. </li>
+        <li>Let dough rest or chill when needed — it improves texture and flavor (like for cookies and pie crusts). </li>
+
+        
+        <header>
+            <h2>Popular Toppings to Add to Any Dessert</h2> 
+            <img class="fit-picture" src="toppings.jpg" width="400" height="255" alt="" />
+
+            <ul>
+                <li>
+                    Fresh Berries
+                    <ul class="emoji-list"></ul>
+                    <ul>
+                      <li>Strawberries</li>
+                      <li>Blueberries</li>
+                      <li>Raspberries</li>
+                      <li>Blackberries</li>
+                    </ul>
+                </li>
+                <li>
+                  Chocolate Toppings
+                  <ul class="emoji-list"></ul>
+                  <ul>
+                    <li>Chocolate Shavings</li>
+                    <li>Chocolate Chips</li>
+                    <li>Cocoa Powder</li>
+                    <li>White Chocolate Drizzle</li>
+                    <li>Melted Chocolate</li>
+                  </ul>
+                </li>
+                <li>
+                  Crushed Nuts
+                  <ul class="emoji-list"></ul>
+                  <ul>
+                    <li>Almonds</li>
+                    <li>Pistachios</li>
+                    <li>Hazelnuts</li>
+                    <li>Walnuts</li>
+                  </ul>
+                </li>
+                <li>
+                  Fun Additions
+                  <ul class="emoji-list"></ul>
+                  <ul>
+                    <li>Sprinkles</li>
+                    <li>Toffee Bits</li>
+                    <li>Caramel Shards</li>
+                    <li>Graham Cracker Crumbs</li>
+                    <li>Pretzel Pieces</li>
+                    <li>Popcorn</li>
+                  </ul>
+                  Sauces & Syrups
+                  </ul>
+                  <ul>
+                    <li>Caramel Sauce</li>
+                    <li>Chocolate Sauce</li>
+                    <li>Honey</li>
+                    <li>Maple Syrup</li>
+                    <li>Fruit Coulis</li>
+                  </ul>
+                </li>
+                  </ul>
+                </li>
+              </ul>
+
+                    
+                    <table class="styled-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Ingredient</th>
+                            <th scope="col">Substitute</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Eggs</th>
+                            <td>Applesauce, Mashed Banana, Yogurt</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Butter</th>
+                            <td>Oil & Margarine</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Sugar</th>
+                            <td>Honey, Maple Syrup</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Heavy Cream</th>
+                            <td>Milk & Butter</td>
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            </tbody>
+                        </table>
+
+                          
+  <h2>Frequently Asked Questions</h2>
+  <div style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; border-radius: 8px;"></div>
+                                
+                                <div style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; border-radius: 8px;">
+                                  <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+                                    <thead style="background-color: #f7f7f7; position: sticky; top: 0; z-index: 1;">
+                                      <tr>
+                                        <th style="text-align: left; padding: 10px; border-bottom: 2px solid #ccc; width: 35%;">Question</th>
+                                        <th style="text-align: left; padding: 10px; border-bottom: 2px solid #ccc;">Answer</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">How can I keep my chocolate cupcakes moist?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Use oil instead of butter and avoid overbaking. Adding sour cream or yogurt helps retain moisture.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Why does my vanilla cake sometimes turn out dense?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Overmixing or using cold ingredients can cause density. Mix just until combined and use room temperature ingredients.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">How do I prevent cracks on cheesecake?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Bake in a water bath, avoid overbaking, and cool slowly in the oven with the door slightly open.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Why is my homemade ice cream icy instead of creamy?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Chill the base thoroughly before churning and use enough fat and sugar for a smooth texture.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">How do I get a firm crust on lemon bars that's not soggy?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Blind bake the crust before adding the lemon filling to prevent sogginess.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">How can I make fudgier brownies?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Use more butter and less flour, and avoid overbaking to keep brownies moist and fudgy.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Why don’t my cinnamon rolls rise properly?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Make sure your yeast is fresh and proof the dough in a warm, draft-free place.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Why do my French macarons crack or have no “feet”?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Let the macarons dry before baking to form a skin, fold batter properly, and bake at the correct temperature.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">How do I get a perfect rise in chocolate souffle?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Whip egg whites to stiff peaks and gently fold into the base. Bake immediately without opening the oven door.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Can I make tiramisu ahead of time?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Yes, it tastes better after chilling for at least 4 hours or overnight to let flavors meld.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">How do I get a smooth custard for creme brulee?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Cook custard gently in a water bath and avoid overbaking for a silky texture.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">How can I prevent the filling from cracking in key lime pie?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Don’t overbake and let the pie cool gradually before chilling.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">How do I keep cannoli shells crispy after filling?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Fill cannoli shells just before serving to prevent sogginess.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">How do I stack crepes in a crepe cake without sliding?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Use a thin layer of frosting or cream between each crepe and chill the cake to set it.</td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Why don’t my croissants have flaky layers?</td>
+                                        <td style="padding: 10px; border-bottom: 1px solid #eee;">Proper lamination and keeping everything cold are key to flaky layers.</td>
+                                      </tr>
+                                    </div>
+                                </section>
+                                </div>
+                            </section>
+                            <head>
+                              
+                            
+                            </body>
+                            </html>
+                            
+
+</body>
+</html>
+
+                      
+        </header>
+</body>
+</html>
